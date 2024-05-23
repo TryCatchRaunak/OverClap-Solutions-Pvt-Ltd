@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -32,6 +32,17 @@
             background-color: rgb(231, 188, 46);
             border-radius: 20px;
         }
+
+        ::selection{
+            background: black;
+            color: #ffffff;
+        }
+
+        ::-moz-selection{
+            background: black;
+            color: #ffffff;
+        }
+
         .header {
             background-color: #FFEA00;
             display: flex;
@@ -51,7 +62,7 @@
 
         .right {
             display: flex;
-            
+
         }
 
         .right ul {
@@ -64,7 +75,7 @@
         }
 
         .right button {
-            font-family: 'Poppins' , sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: #ffffff;
             background-color: #FFEA00;
             border: none;
@@ -78,9 +89,13 @@
         }
 
         .right button:hover {
-            background-color: #FFD700;
+            color: #000000;
+            font-weight: 900;
+            background-color: #FFEA00;
             transform: scale(1.1);
         }
+
+
     </style>
 </head>
 
@@ -89,10 +104,10 @@
         <h1 class="tag">OverClap Solutions</h1>
         <div class="right">
             <ul>
-                <li><button onclick="window.location.href = 'index.html'";>Home</button></li>
+                <li><button onclick="window.location.href = 'index.html'" ;>Home</button></li>
                 <li><button onclick="window.location.href = 'products.html'">Products</button></li>
-                <li><button onclick="window.location.href = 'services.html'";>Services</button></li>
-                <li><button onclick="window.location.href = 'contact.html'";>Contact Us</button></li>
+                <li><button onclick="window.location.href = 'services.html'" ;>Services</button></li>
+                <li><button onclick="window.location.href = 'contact.html'" ;>Contact Us</button></li>
             </ul>
         </div>
     </header>
